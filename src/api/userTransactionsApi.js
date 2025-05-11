@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const userTransactionsApi = axios.create({
-    baseURL: 'https://moneydashboard-back.onrender.com',
+    baseURL: 'https://money-guard-app.onrender.com',
 });
 
 export const setToken = token => {
