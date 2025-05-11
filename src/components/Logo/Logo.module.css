@@ -1,0 +1,31 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.textLogo {
+    font-weight: 400;
+    font-size: 19px;
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        font-size: 26px;
+
+        img {
+            width: 36px;
+            height: 36px;
+        }
+        .textLogo {
+            font-size: 26px;
+        }
+    }
+}

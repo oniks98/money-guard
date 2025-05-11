@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+
+    color: var(--white);
+    background-color: var(--background-color);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    ::-webkit-scrollbar-thumb {
+        scrollbar-color: #6b5e97 #2d2a40;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #6b5e97;
+    }
+
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #6b5e97 #2d2a40;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    body {
+        background-image: url('/images/gradient-mob.webp');
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url('/images/gradient-tab.webp');
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        background-image: url('/images/gradient-desk.webp');
+    }
+}
+
+main {
+    flex-grow: 1;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px rgba(157, 64, 186, 0.9) inset !important;
+    -webkit-text-fill-color: #fff !important;
+}
